@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="master_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>C2Blog</title>
+    <link rel="stylesheet" runat="server" media="screen" href="/styles/css.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body runat="server" id="MasterPageBody">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #f5f5f0;">
+        <a class="navbar-brand" href="#">Technology Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.aspx">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.aspx">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Post.aspx">SAMPLE POST</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.aspx">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="padding-top: 300px;">
+                <p class="text-center h1 font-weight-bold text-white" runat="server" id="MasterTitle1">
+                    <asp:ContentPlaceHolder id="HeaderTitle1" runat="server"></asp:ContentPlaceHolder>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center h3 text-white" runat="server" id="MasterTitleDivider">
+                    <asp:ContentPlaceHolder id="HeaderDivider" runat="server"></asp:ContentPlaceHolder>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center h6 text-white-50" runat="server" id="MasterTitle2">
+                    <asp:ContentPlaceHolder id="HeaderTitle2" runat="server"></asp:ContentPlaceHolder>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="padding-top: 200px;">
+                <asp:ContentPlaceHolder id="Content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div class="row hr"></div>
+    <div class="text-center">
+        <img src="images/iconfinder_Circled_Twitter_svg_5279123.png" class="socialmedaicon"/>
+        <img src="images/iconfinder_Circled_Facebook_svg_5279111.png" class="socialmedaicon"/>
+        <img src="images/iconfinder_Circled_Instagram_svg_5279112.png" class="socialmedaicon"/>
+    </div>
+    <div class="text-center">
+        Copyright © Your website 2016
+    </div>
+</body>
+</html>

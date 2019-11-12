@@ -1,0 +1,30 @@
+﻿body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position-y: top;
+}
+
+.posttitle {
+    padding-top: 20px;
+}
+
+.socialmedaicon {
+    width: 50px;
+    height: 30px;
+    padding-right: 20px;
+}
+
+.hr {
+    height: 3px;
+    background-color: #808080;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.sidenote {
+    padding-left: 50px;
+    color: grey;
+}
+
